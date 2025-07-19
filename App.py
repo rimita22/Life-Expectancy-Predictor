@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.tree import DecisionTreeRegressor
 
 # Train model
-df = pd.read_csv("Life Expectancy Data.csv")
+df = pd.read_csv("life_expectancy_data.csv")
 df.columns = df.columns.str.strip()
 df = df[df["Life expectancy"].notna()]
 df = df.fillna(df.mean(numeric_only=True))
